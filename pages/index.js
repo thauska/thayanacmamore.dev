@@ -1,10 +1,21 @@
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import Background from '../src/components/Background';
+import Container from '../src/components/Container';
+import Card from '../src/components/Card';
+import ProfileImg from '../src/components/ProfileImg';
+
+
+import db from '../db.json';
 
 export default function Home() {
-  return <Title>My page</Title>
+
+  return (
+    <Background backgroundImage={db.bg}>
+      <Container>
+      </Container>
+    </Background>
+  );
 }

@@ -1,0 +1,20 @@
+{
+    "bg": "https://source.unsplash.com/960x540/?javascript,css",
+    "title": "Portfólio Pessoal",
+    "description": "Um pouco sobre mim.",
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#383D59",
+        "secondary": "#F29F8D",
+        "mainBg": "#69688C",
+        "glassBg": "#69688C",
+        "contrastText": "#FFFFFF",
+        "wrong": "#A62D2D",
+        "success": "#497336"
+      },
+      "borderRadius": "4px"
+    }
+  }
