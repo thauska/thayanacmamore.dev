@@ -1,21 +1,29 @@
-  
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Card = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => theme.colors.glassBg};
-  border-radius: 4px;
   overflow: hidden;
-  h1, h2, h3 {
-    font-size: 16px;
+  h1 {
+    font-size: 3em;
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 0;
+    @media screen and (max-width: 800px) {
+      font-size: 5vw;
+    }
+  }
+  h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 0;
+    @media screen and (max-width: 800px) {
+      font-size: 3vw;
+    }
   }
   p {
-    font-size: 14px;
+    font-size: 0.87em;
     font-weight: 400;
     line-height: 1.3;
   }
@@ -27,7 +35,6 @@ Card.Header = styled.header`
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
-    
   * {
     margin: 0;
   }
@@ -35,8 +42,8 @@ Card.Header = styled.header`
 
 Card.Content = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 24px 32px 32px 32px;
   & > *:first-child {
@@ -45,28 +52,19 @@ Card.Content = styled.div`
   & > *:last-child {
     margin-bottom: 0;
   }
-  ul {
-    list-style: none;
-    padding: 0;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
   }
 `;
 
-Card.Topic = styled.a`
-  outline: 0;
-  text-decoration: none;
+Card.Topic = styled.div`
+  text-align: center;
   color: ${({ theme }) => theme.colors.contrastText};
-  background-color: ${({ theme }) => `${theme.colors.primary}40`};
-  padding: 10px 15px;
-  margin-bottom: 8px;
-  cursor: pointer;
+  background-color: ${({ theme }) => `${theme.colors.primary}D9`};
+  padding: 2rem 1rem;
   border-radius: ${({ theme }) => theme.borderRadius};
-  transition: .3s;
+  transition: 0.3s;
   display: block;
-  
-  &:hover,
-  &:focus {
-    opacity: .5;
-  }
 `;
 
 export default Card;

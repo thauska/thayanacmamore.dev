@@ -4,7 +4,7 @@ import {Heart} from 'styled-icons/fa-solid'
 
 const FooterWrapper = styled.footer`
   background-color: #00000090;
-  padding: 15px 25px;
+  padding: 10px 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@ const FooterWrapper = styled.footer`
     transition: .3s;
     &:hover,
     &:focus {
-      opacity: .5;
+      opacity: .8;
     }
     span {
       text-decoration: underline;
