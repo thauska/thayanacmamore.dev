@@ -24,7 +24,7 @@ const LoveHeart = styled(Heart)`
 export default function Footer(props) {
   return (
     <HeaderWrapper {...props}>
-        <img src='/img/TCM.svg' />      
+        <img src='/img/TCM.png' />      
     </HeaderWrapper>
   );
 }

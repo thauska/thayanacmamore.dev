@@ -15,7 +15,7 @@ export default function Home({ title, description, bg }) {
       <meta property="og:site_name" content="Personal Resume" />
 
       <meta property="og:description" content={description} />
-      <meta property="og:image" content="./img/default.jpg" />
+      <meta property="og:image" content="https://thayanacmamore.dev/img/default.jpg" />
       <meta property="og:image:type" content="image/jpg" />
 
       <link rel="preconnect" href="https://fonts.gstatic.com" />
