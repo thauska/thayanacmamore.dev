@@ -9,12 +9,13 @@ export default function Home({ title, description, bg }) {
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta property="og:locale" content="pt_BR" />
+      <meta property="og:url" content="https://thayanacmamore.dev/" />
 
       <meta property="og:title" content={title} />
-      <meta property="og:site_name" content="resume" />
+      <meta property="og:site_name" content="Personal Resume" />
 
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={bg} />
+      <meta property="og:image" content="./img/default.jpg" />
       <meta property="og:image:type" content="image/jpg" />
 
       <link rel="preconnect" href="https://fonts.gstatic.com" />
