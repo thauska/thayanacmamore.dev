@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 const Card = styled.div`
-  margin-top: 24px;
-  margin-bottom: 24px;
   overflow: hidden;
+  flex-grow: 1;
   h1 {
     font-size: 3em;
     font-weight: 700;
@@ -14,7 +13,7 @@ const Card = styled.div`
     }
   }
   h3 {
-    font-size: 1.2em;
+    font-size: 1.25em;
     font-weight: 500;
     line-height: 2;
     margin-bottom: 0;
@@ -26,17 +25,6 @@ const Card = styled.div`
     font-size: 0.87em;
     font-weight: 400;
     line-height: 1.3;
-  }
-`;
-
-Card.Header = styled.header`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 18px 32px;
-  background-color: ${({ theme }) => theme.colors.primary};
-  * {
-    margin: 0;
   }
 `;
 

@@ -1,16 +1,15 @@
 {
-    "bg": "https://source.unsplash.com/960x540/?javascript",
+    "bg": "https://source.unsplash.com/960x540/?javascript,frontend,fullstack",
     "title": "Thayana Corrêa Mamoré - Fullstack Developer",
-    "description": "Buscando agilidade e boas práticas no desenvolvimento de aplicações.",
+    "description": "A passionate developer from Belém - Pará - Brazil",
     "external": [
       ""
     ],
     "theme": {
       "colors": {
         "primary": "#383D59",
-        "secondary": "#F29F8D",
+        "secondary": "#B84C65",
         "mainBg": "#69688C",
-        "glassBg": "#69688C",
         "contrastText": "#FFFFFF",
         "wrong": "#A62D2D",
         "success": "#497336"

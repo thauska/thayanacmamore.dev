@@ -18,7 +18,6 @@ const Background = styled.div`
         url(${({ backgroundImage }) => backgroundImage});
       display: block;
       width: 100%;
-      height: 210px;
       position: absolute;
       top: 0;
       left: 0;

@@ -4,11 +4,12 @@ import {Heart} from 'styled-icons/fa-solid'
 
 const FooterWrapper = styled.footer`
   background-color: #00000090;
-  padding: 10px 25px;
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
