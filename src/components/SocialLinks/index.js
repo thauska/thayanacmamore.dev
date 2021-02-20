@@ -17,7 +17,7 @@ const SocialWrapper = styled.div`
   }
 `;
 
-export default function Social() {
+export default function SocialLinks() {
   return (
     <SocialWrapper>
       <a>

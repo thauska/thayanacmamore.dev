@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-export default function Home({ title, description, bg }) {
+export default function Home({ title, description, ogImg }) {
   return (
     <Head>
       <title>{title}</title>
@@ -15,8 +15,10 @@ export default function Home({ title, description, bg }) {
       <meta property="og:site_name" content="Personal Resume" />
 
       <meta property="og:description" content={description} />
-      <meta property="og:image" content="https://thayanacmamore.dev/img/default.jpg" />
+      <meta property="og:image" content={ogImg} />
       <meta property="og:image:type" content="image/jpg" />
+      <meta property="og:image:width" content="800" />
+      <meta property="og:image:height" content="600" />
 
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link

@@ -6,7 +6,7 @@ const FooterWrapper = styled.footer`
   background-color: #00000090;
   position: relative;
   overflow: hidden;
-  padding: 0.5em 0;
+  padding: 0.3em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@ const FooterWrapper = styled.footer`
   bottom: 0;
   width: 100%;
   div {
-    margin: 2px 0;
+    margin: 1px 0;
   }
   a {
     color: white;

@@ -1,10 +1,10 @@
-import React from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import db from '../db.json';
-import Head from '../src/components/Head';
-import GitHubCorner from '../src/components/GitHubCorner';
-import Header from '../src/components/Header';
-import Footer from '../src/components/Footer';
+import React from "react";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import db from "../db.json";
+import Head from "../src/components/Head";
+import Background from "../src/components/Background";
+import Header from "../src/components/Header";
+import Footer from "../src/components/Footer";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     font-family: 'Fira Code', monospace;
-    color: ${({ theme }) => theme.colors.contrastText};
+    color: ${() => theme.colors.contrastText};
   }
   html, body {
     min-height: 100vh;
@@ -37,8 +37,9 @@ export default function App({ Component, pageProps }) {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Header />
-        <Component {...pageProps} />
-        <GitHubCorner projectUrl="https://github.com/thauska" />
+        <Background backgroundImage={db.bg}>
+          <Component {...pageProps} />
+        </Background>
         <Footer />
       </ThemeProvider>
     </>

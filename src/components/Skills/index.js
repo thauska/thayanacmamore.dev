@@ -1,10 +1,18 @@
 import styled from "styled-components";
 
 const SkillWrapper = styled.div`
-  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  & > *:last-child {
+    display: flex;
+    flex-wrap: wrap;
+  }
   a {
     text-decoration: none;
     padding: 0rem 0.4rem;
+    background-color: ${({ theme }) => `${theme.colors.primary}D9`};
+    padding: 0.5rem;
+    border-radius: ${({ theme }) => theme.borderRadius};
     img {
       width: 45px;
       height: 45px;
@@ -16,7 +24,7 @@ export default function Skills() {
   return (
     <SkillWrapper>
       <p align="left">
-          <h3>Linguagens e tecnologias</h3>
+        <h3>Linguagens e tecnologias</h3>
         <p>
           <a href="https://www.w3.org/html/" target="_blank">
             {" "}

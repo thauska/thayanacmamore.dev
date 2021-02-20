@@ -18,7 +18,7 @@ const Card = styled.div`
     line-height: 2;
     margin-bottom: 0;
     @media screen and (max-width: 800px) {
-      font-size: 3vw;
+      font-size: 3.5vw;
     }
   }
   p {
@@ -33,7 +33,7 @@ Card.Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px 32px 32px 32px;
+  padding: 20px 32px 32px 32px;
   & > *:first-child {
     margin-top: 0;
   }
@@ -42,6 +42,7 @@ Card.Content = styled.div`
   }
   @media screen and (max-width: 700px) {
     flex-direction: column;
+    padding: 20px 0px;
   }
 `;
 
