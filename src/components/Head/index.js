@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-export default function Home({ title, description, ogImg }) {
+export default function Home({ title, description, bg }) {
   return (
     <Head>
       <title>{title}</title>
@@ -15,7 +15,7 @@ export default function Home({ title, description, ogImg }) {
       <meta property="og:site_name" content="Personal Resume" />
 
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={ogImg} />
+      <meta property="og:image" content={bg} />
       <meta property="og:image:type" content="image/jpg" />
       <meta property="og:image:width" content="800" />
       <meta property="og:image:height" content="600" />
